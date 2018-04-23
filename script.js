@@ -24,8 +24,8 @@ var Counter = React.createClass({
 	},
 
 	componentDidUpdate: function() {	
-	    var element1 = React.createElement('p', {}, 'Brawo - użyłeś przycisku');
-	    console.log('Tu sobie dorzucam napis po kliknęciu w guzik (Dom się zaktualizuje najpierw, stąd w console.log licznik już powiększony)');
+	    var element1 = React.createElement('p', {}, 'Kliknięty przycisk');
+	    console.log('Dom się zaktualizuje najpierw, stąd w console.log licznik już powiększony');
 	    ReactDOM.render(element1, document.getElementById('info'));
 	    console.log(this.state.counter);
 	},
